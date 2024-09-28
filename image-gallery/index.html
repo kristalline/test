@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>Image gallery</title>
+</head>
+
+<body>
+    <main>
+        <div class="search-block-wrapper">
+            <div class="container search-block">
+                <div class="header">
+                    <img src="images/pictures.svg" alt="pictures icon" class="header-icon">
+                    <h1>Image Gallery API</h1>
+                </div>
+                <form action="" class="search" autocomplete="off" >
+                    <div class="input-block">
+                        <input type="text" name="input" placeholder="Search..." class="input" autofocus>
+                        
+                        <img src="images/close.svg" alt="close icon" class="icon icon-close" data-icon-close="">
+                    </div>
+                    <button type="submit" class="btn" >
+                        <img src="images/loop-white.svg" alt="loop icon" class="icon" data-icon-loop="">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <section class="gallery container">
+            <div class="gallery-content">
+
+            </div>
+            <button type="submit" class="btn btn_lg" data-show-more="">Show more</button>
+            <div class="text_sm">Total requests per hour: <span data-ratelimit></span>; remainig: <span data-ratelimit-remaining=''></span></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__item">
+            <img src="images/github.svg" alt="github logo ">
+            <a href="https://github.com/kristalline" class="link" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+        <div class="footer__item year">
+            <span>2024</span>
+        </div>
+        <div class="footer__item ">
+            <a href="https://rs.school/courses/javascript-ru" class="link" target="_blank" rel="noopener noreferrer">
+                <img src="images/rs_school_js.svg " alt="rsschool logo">
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/Modal.js"></script>
+</body>
+
+</html>
