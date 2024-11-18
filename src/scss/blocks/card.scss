@@ -1,0 +1,48 @@
+.card {
+  display: block;
+  width: 310px;
+  height: 340px;
+  background-color: $color-white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    background-color: $color-background;
+    object-fit: contain;
+
+  }
+
+  &__text {
+    padding: 20px;
+    text-align: left;
+  }
+
+  &__header {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  &__category {
+    margin-bottom: 7px;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    &_work {
+      color: $color-blue;
+    }
+
+    &_harmony {
+      color: $color-purple;
+    }
+
+    &_health {
+      color: $color-green;
+    }
+  }
+}

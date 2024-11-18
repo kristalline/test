@@ -1,0 +1,41 @@
+{
+    "name": "rs.school",
+    "version": "1.0.0",
+    "type": "module",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "license": "ISC",
+    "author": "Svetlana Semenko",
+    "scripts": {
+        "pug": "pug misc/pug/pages/** --pretty --watch --out ./src/",
+        "build": "webpack --mode production",
+        "dev": "webpack serve --mode development",
+        "svg": "webpack --config=webpack.config.js --mode=production"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.14.0",
+        "css-loader": "^7.1.2",
+        "eslint": "^8.57.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.31.0",
+        "globals": "^15.12.0",
+        "html-loader": "^5.1.0",
+        "html-webpack-plugin": "^5.6.3",
+        "mini-css-extract-plugin": "^2.9.1",
+        "normalize.css": "^8.0.1",
+        "sass": "^1.80.4",
+        "sass-loader": "^16.0.2",
+        "style-loader": "^4.0.0",
+        "svg-chunk-webpack-plugin": "^6.0.1",
+        "svg-sprite-loader": "^6.0.11",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
+    },
+    "dependencies": {
+        "modern-normalize": "^3.0.1",
+        "pug-cli": "^1.0.0-alpha6"
+    }
+}

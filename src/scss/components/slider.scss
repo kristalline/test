@@ -1,0 +1,39 @@
+.slider {
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    img {
+      object-fit: scale-down
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    @include font(8rem);
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &__img {
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 82px;
+  }
+}

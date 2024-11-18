@@ -1,0 +1,12 @@
+@mixin font ($size, $weight: 600, $style: normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+}
+
+%text-sm {
+  font-family: $font-second;
+  @include font(2.4rem, 400);
+  line-height: 100%;
+  letter-spacing: 1.2px;
+}

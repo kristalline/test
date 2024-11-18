@@ -1,0 +1,47 @@
+.btn {
+  display: block;
+  background-color: $color-dark;
+  padding: 20px 32px;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-dark;
+  }
+}
+
+.btn-arrow {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  border: 1px solid $color-white;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: $color-white;
+    ;
+  }
+
+  &:hover {
+    background-color: $color-white;
+
+    svg {
+      stroke: $color-primary;
+    }
+  }
+
+  &_left {
+    transform: rotate(180deg);
+  }
+}

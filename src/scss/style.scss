@@ -1,0 +1,114 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/sections.scss';
+@import 'components/slider.scss';
+
+@import 'blocks/button.scss';
+@import 'blocks/timer.scss';
+@import 'blocks/card.scss';
+@import 'blocks/tags.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $ease-main;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  @include font(3.2rem);
+  line-height: 150%;
+  letter-spacing: 5.76px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  @include font(2.4rem);
+  line-height: 152%;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  @include font(1.6rem);
+  line-height: 152%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  color: $color-dark;
+  @include font(1.2rem);
+}
+
+.container {
+  max-width: 1440px;
+  width: $container-width;
+  padding-left: 82px;
+  padding-right: 82px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 1440px;
+  width: $container-width;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: $color-primary;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gifts-bg {
+  background-color: $color-primary;
+  background-image: url(../images/bg-garland.png);
+  background-position: center to;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

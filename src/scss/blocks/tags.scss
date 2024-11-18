@@ -1,0 +1,28 @@
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &__item {
+    border-radius: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: $ease-main;
+
+    &.active {
+      background-color: $color-white-20;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: $color-white-20;
+    }
+  }
+
+
+}

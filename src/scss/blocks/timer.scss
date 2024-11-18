@@ -1,0 +1,39 @@
+.timer {
+  display: flex;
+  max-width: min-content;
+  margin: 0 auto;
+  padding: 8px 12px 12px 12px;
+  background-color: $color-white-40;
+  border-radius: 20px;
+
+  &__item {
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+
+    &:not(:last-child):after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1px;
+      height: 20px;
+      background-color: $color-white-40;
+    }
+  }
+
+  &__time {
+    @include font(2.4rem);
+    line-height: 152%;
+    letter-spacing: 3.84px;
+  }
+
+  &__text {
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+}

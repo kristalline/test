@@ -1,0 +1,45 @@
+$container-width: 100%; // Максимальная ширина контейнера контента
+
+$breakpoints: ('xl': 1280px,
+    'lg': 992px,
+    'md': 768px,
+    'sm': 560px,
+    'xs': 375px,
+);
+
+//typography
+
+//fonts
+$font-main: 'Montserrat',
+sans-serif; // Основной шрифт сайта
+$font-second: 'Allura',
+sans-serif;
+$font-size-base: 10px;
+
+//colors
+
+$color-primary: #FF4646;
+$color-primary-10: rgba(255, 70, 70, .1);
+
+$color-background:#ECF3F8;
+
+$color-white: #ffffff;
+$color-white-40: rgba(255, 255, 255, .4);
+$color-white-20: rgba(255, 255, 255, .2);
+
+$color-dark: #181C29;
+$color-overlay: rgba(24, 28, 41, .8);
+
+$color-blue: #4361FF;
+$color-green: #06A44F;
+$color-purple: #FF43F7;
+
+//$color-hamburger: #173A56;
+
+
+//hover
+//$btn-hover-color: #FF7549;
+//$link-hover: $color-brand;
+
+// Transitions
+$ease-main: all 0.3s ease-out;
